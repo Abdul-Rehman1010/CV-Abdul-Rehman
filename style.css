@@ -127,6 +127,38 @@ ul {
     background-color: DodgerBlue;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.contact-form button {
+    background-color: RoyalBlue;
+    color: White;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: DodgerBlue;
+}
+
 /*Animation*/
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -194,5 +226,17 @@ ul {
 
     .footer{
         background: #36454F;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        background-color: #36454F;
+        color: White;
+        border: 1px solid Gray;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: LightGray;
     }
 }
